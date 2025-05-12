@@ -1,4 +1,4 @@
-import { Button, Form, Input } from 'antd';
+import { Button, Form, Input } from 'antd';// antd
 import { useModel } from 'umi';
 
 const FormRandomUser = () => {
