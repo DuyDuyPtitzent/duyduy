@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",                 // Phiên bản JavaScript đầu ra
+    "module": "commonjs",              // Hệ thống module (Node.js dùng commonjs)
+    "outDir": "./dist",                // Thư mục chứa code đã biên dịch
+    "rootDir": "./src",                // Thư mục chứa code TypeScript gốc
+    "strict": true,                    // Bật tất cả các kiểm tra strict type
+    "esModuleInterop": true,           // Cho phép import default từ các module commonjs
+    "skipLibCheck": true,              // Bỏ qua kiểm tra type của các tệp .d.ts
+    "forceConsistentCasingInFileNames": true, // Đảm bảo tên tệp nhất quán
+    "resolveJsonModule": true,         // Cho phép import tệp .json
+    "baseUrl": "./src",                // Thư mục gốc cho các import tuyệt đối
+    "paths": {
+      "@/*": ["*"]                     // Tạo alias @/ để trỏ đến thư mục src/
+    },
+    "experimentalDecorators": true,    // (Nếu dùng decorators với Sequelize hoặc các thư viện khác)
+    "emitDecoratorMetadata": true      // (Nếu dùng decorators)
+  },
+  "include": ["src/**/*"],             // Các tệp/thư mục sẽ được biên dịch
+  "exclude": ["node_modules", "dist"]  // Các tệp/thư mục sẽ bị bỏ qua
+}
